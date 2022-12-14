@@ -1,19 +1,8 @@
 import '../App.css';
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-export default function Beers() {
-    const [beerList, setBeerList] = useState([]);
-
-    useEffect(() => {
-        axios.get('https://ih-beers-api2.herokuapp.com/beers')
-            .then(response => {
-                setBeerList(response.data);
-            })
-            .catch(err => console.log(err))
-    }, [])
-
+export default function Beers({beerList}) {
+    
   return (
     <div>
     {beerList.map(beer => (

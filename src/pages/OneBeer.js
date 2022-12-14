@@ -1,23 +1,12 @@
-import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
 
-export default function OneBeer() {
-    const [beerDetails, setBeerDetails] = useState([]);
-    
+export default function OneBeer({beerList}) {
     const params = useParams();
     const id = params.beerId;
 
-    useEffect(() => {
-        axios.get('https://ih-beers-api2.herokuapp.com/beers')
-            .then(response => {
-                setBeerDetails(response.data)
-            })
-    }, [])
-
   return (
     <div>
-    {beerDetails
+    {beerList
         .filter(beer => beer._id === id)
         .map(beer => (
             <div className='beer-details' key={beer._id} >
