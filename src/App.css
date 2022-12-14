@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+/* -------------------------BEERS PAGE----------------------- */
+
+.beer-picture {
+  height: 150px;
+}
+
+.one-beer-card {
+  border-bottom: 1px solid; 
+  padding-top: 15px;
+}
+
+/* ----------------BEER DETAILS PAGE--------------------- */
+
+.beer-details-picture {
+  height: 200px;
+}
+
+.beer-details {
+
+}
