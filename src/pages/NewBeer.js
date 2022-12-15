@@ -22,45 +22,45 @@ export default function NewBeer() {
   };
 
   return (
-    <div>
+    <div className='new-beer-card'>
     <form onSubmit={handleSubmit}>
-      <label>Name:</label>
+      <label>Name</label><br />
       <input 
         type='text'   
         onChange={e => setNewBeer({...newBeer, name: e.target.value})}/>
       <br />
 
-      <label>Tagline</label>
+      <label>Tagline</label><br />
       <input 
         type='text'            
         onChange={e => setNewBeer({...newBeer, tagline: e.target.value})} />
       <br />
 
-      <label>First Brewed</label>
+      <label>First Brewed</label><br />
       <input 
         type='text'           
         onChange={e => setNewBeer({...newBeer, first_brewed: e.target.value})}/>
       <br />
 
-      <label>Description</label>
+      <label>Description</label><br />
       <textarea
         type='text'            
         onChange={e => setNewBeer({...newBeer, description: e.target.value})} />
       <br />
 
-      <label>Brewer's Tips</label>
+      <label>Brewer's Tips</label><br />
       <input 
         type='text'           
         onChange={e => setNewBeer({...newBeer, brewers_tips: e.target.value})} />
       <br />
 
-      <label>Attenuation Level</label>
+      <label>Attenuation Level</label><br />
       <input 
         type='number'           
         onChange={e => setNewBeer({...newBeer, attenuation_level: e.target.value})}/>
       <br />
 
-      <label>Contributed By</label>
+      <label>Contributed By</label><br />
       <input 
         type='text'            
         onChange={e => setNewBeer({...newBeer, contributed_by: e.target.value})} />

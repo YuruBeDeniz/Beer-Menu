@@ -54,6 +54,45 @@
   height: 200px;
 }
 
-.beer-details {
 
+/* -------------------NEW BEER PAGE----------------- */
+.new-beer-card{
+  font-weight: bold;
+  color: rgb(74, 74, 74);
+} 
+
+button {
+  background-color: #61dafb;
+  border-radius: 4px;
+  border: #61dafb;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 350px;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+textarea{
+  width: 165px;
+  height: 200px;
+  border-radius: 5px;
+  border-color: lightgray;
+  box-sizing: border-box;
+  width: 350px;
+}
+
+input {
+  border-radius: 5px;
+  border-color: lightgray;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 350px;
+}
+
+
+/* -----------------NAV-BAR------------------- */
+.nav-bar-pic{
+  align-items: center;
 }
